@@ -118,30 +118,6 @@ public class FullscreenActivity extends AppCompatActivity {
     }
 
     private void toggle() {
-        final int notifyID = 1; // 通知的識別號碼
-        final NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE); // 取得系統的通知服務
-        final Notification notification = new Notification.Builder(getApplicationContext()).setSmallIcon(R.mipmap.ic_launcher).setContentTitle("內容標題").setContentText("內容文字").build(); // 建立通知
-        notificationManager.notify(notifyID, notification);
-
-
-        /*Intent intent = new Intent(this, FullscreenActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_PREVIOUS_IS_TOP);
-        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
-        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this);
-        mBuilder.setContentTitle("測試標題")                                                //設置通知欄標題
-                .setContentText("測試內容")                                                 //<span style="font-family: Arial;">/設置通知欄顯示內容</span>
-                .setContentIntent(pendingIntent)      //設置通知欄點擊意圖
-                //.setNumber(number)                                                        //設置通知集合的數量
-                .setTicker("測試通知來啦")                                                  //通知首次出現在通知欄，帶上升動畫效果的
-                .setWhen(System.currentTimeMillis())                                           //通知產生的時間，會在通知信息裡顯示，一般是系統獲取到的時間
-                .setPriority(Notification.PRIORITY_DEFAULT)                               //設置該通知優先級
-                //.setAutoCancel(true)                                                      //設置這個標誌當用戶單擊面板就可以讓通知將自動取消
-                .setOngoing(false)                                                          //ture，設置他為一個正在進行的通知。他們通常是用來表示一個後台任務,用戶積極參與(如播放音樂)或以某種方式正在等待,因此佔用設備(如一個文件下載,同步操作,主動網絡連接)
-                .setDefaults(Notification.DEFAULT_VIBRATE)                               //向通知添加聲音、閃燈和振動效果的最簡單、最一致的方式是使用當前的用戶默認設置，使用defaults屬性，可以組合
-                //Notification.DEFAULT_ALL Notification.DEFAULT_SOUND 添加聲音              // requires VIBRATE permission
-                .setSmallIcon(R.mipmap.ic_launcher);                                        //設置通知小ICON
-        NotificationManager mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        mNotificationManager.notify(0, mBuilder.build());*/
     }
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
