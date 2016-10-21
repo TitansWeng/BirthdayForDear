@@ -118,6 +118,7 @@ public class FullscreenActivity extends AppCompatActivity {
     }
 
     private void toggle() {
+
     }
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {

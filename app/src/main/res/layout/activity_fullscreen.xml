@@ -15,27 +15,17 @@
          android:fitsSystemWindows. -->
 
     <ImageButton
+        android:contentDescription="home"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:srcCompat="@drawable/home"
         android:id="@+id/imageButton"
         android:background="?android:attr/listChoiceBackgroundIndicator"
         style="@android:style/Widget.Holo.ImageButton"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         android:elevation="0dp"
         android:adjustViewBounds="true"
         android:cropToPadding="true" />
-
-    <TextView
-        android:id="@+id/fullscreen_content"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center|bottom"
-        android:keepScreenOn="true"
-        android:text="@string/dummy_content"
-        android:textColor="#FFF"
-        android:textSize="20sp"
-        android:textStyle="bold" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -55,5 +45,19 @@
         </LinearLayout>
 
     </FrameLayout>
+
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:keepScreenOn="true"
+        android:text="@string/dummy_content"
+        android:typeface="normal"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold|italic"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed" />
 
 </FrameLayout>
